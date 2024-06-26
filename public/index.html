@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="/public/css/global.css">
@@ -10,68 +11,66 @@
   <section id="pantalla-dividida">
     <div class="izquierda">
       <div class="imgCentro tamImagen">
-      <img 
-      src="/public/imagenes/logo.png" 
-      /> 
-    </div>
+        <img src="/public/imagenes/logo.png" />
+      </div>
       <h1 class="centrado">Software contable</h1>
       <br>
       <br>
       <br>
       <br>
       <div class="imgCentro">
-      <img src="/public/imagenes/logo2.jfif"/>
+        <img src="/public/imagenes/logo2.jfif" />
+      </div>
     </div>
-  </div>
 
 
+    <div class="derecha lineaDivision">
+      <h1>Inicio de sesión</h1>
+      <br>
+      <br>
+      <br>
 
-  <div class="derecha lineaDivision"> 
-    <h1>Inicio de sesión</h1> 
-    <br>
-    <br>
-    <br>
+      <form action="/validar" method="post">
+        <p><label for="usuario">Usuario:
+            <br>
+            <br>
+            <input class="cajaText" type="text" id="usuario" name="usuario"></label></p>
+        <br>
+        <br>
+        <p><label for="clave">Contraseña:
+            <br>
+            <br>
+            <input class="cajaText" type="text" id="clave" name="clave"></label></p>
+        <br>
+        <br>
+        <br>
 
- <form action="/public/html/menu.html" method="post">
-  <p><label for="usuario">Usuario: 
-  <br>
-  <br> 
-  <input class="cajaText" type="text" id="usuario" ></label></p>
-  <br>
-  <br>
-  <p><label for="clave">Contraseña: 
-  <br>
-  <br>  
-  <input class="cajaText" type="text" id="clave" ></label></p>
-<br>
-<br>
-<br>
-
-<input type="radio" value="recordarDatos">
-<label>Recordar datos</label>
+        <input type="radio" value="recordarDatos" name="recordarDatos">
+        <label>Recordar datos</label>
 
 
-<button type="submit" class="button button-blue espacio-derecha">Iniciar</button>
+        <button type="submit" class="button button-blue espacio-derecha">Iniciar</button>
 
-<br>
-<br>
-<br>
-<a class="enlace-derecha" href="#" id="recuperarLink">Recuperar contraseña</a> 
-<br>
-<br> 
-<p class="parrafo">¿No tiene una cuenta?</p> <a class="button button-blue " href="/public/html/form registro.html">Registrar</a>
+        <br>
+        <br>
+        <br>
+        <a class="enlace-derecha" href="#" id="recuperarLink">Recuperar contraseña</a>
+        <br>
+        <br>
+        <p class="parrafo">¿No tiene una cuenta?</p> <a class="button button-blue "
+          href="/public/html/form registro.html">Registrar</a>
 
- </form>   
- 
- <div id="myModal" class="modal">
-  <div class="modal-content">
-      <span class="close" id="closeModal">&times;</span>
-      <p id="modalMensaje"></p>
-  </div>
-  <script src="/index.js"></script>
-<script src="/public/js/document.js"></script>
-</div>
-</section>
+      </form>
+
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close" id="closeModal">&times;</span>
+          <p id="modalMensaje"></p>
+        </div>
+        <script src="/index.js"></script>
+        <script src="/public/js/document.js"></script>
+      </div>
+  </section>
 </body>
 
 

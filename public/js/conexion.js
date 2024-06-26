@@ -1,9 +1,9 @@
-const mysql = require('mysql');
+/* const mysql = require('mysql');
 const conexion = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: '',
-    database: 'softwarec'
+    database: 'software'
 });
 
 conexion.connect((err) => {
@@ -13,7 +13,7 @@ conexion.connect((err) => {
     }
     console.log('Conexion exitosa a la base de datos');
 });
-
+ */
 
 /* isertar datos a la base de datos */
 /* const newDato = "INSERT INTO productos (IDproducto, Nombre, Descripcion, UniDisponibles) VALUES (NULL, 'papel higienico', 'rollo de papel doble hoja marca familia', '5')";
@@ -54,7 +54,7 @@ conexion.query(eliminar, function(error,info){
 
 
 /* consultas a la base de datos  */
-const produc = "SELECT * FROM productos";
+/* const produc = "SELECT * FROM productos";
 conexion.query(produc,function(error,info){
     if(error){
         throw error;
@@ -69,3 +69,4 @@ conexion.query(produc,function(error,info){
 conexion.end();
 
 
+ */
